@@ -14,6 +14,9 @@
 		2F0A10542798A34E0060AB6C /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A10532798A34E0060AB6C /* EventTests.swift */; };
 		2F0A105E2798A34E0060AB6C /* EventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A105D2798A34E0060AB6C /* EventUITests.swift */; };
 		2F0A10602798A34E0060AB6C /* EventUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A105F2798A34E0060AB6C /* EventUITestsLaunchTests.swift */; };
+		2F0A10752798ADA60060AB6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A10742798ADA60060AB6C /* SceneDelegate.swift */; };
+		2F0A10792798B0220060AB6C /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A10782798B0220060AB6C /* InfoPage.swift */; };
+		2F0A107C2798B2D10060AB6C /*  Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A107B2798B2D00060AB6C /*  Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		2F0A10592798A34E0060AB6C /* EventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0A105D2798A34E0060AB6C /* EventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventUITests.swift; sourceTree = "<group>"; };
 		2F0A105F2798A34E0060AB6C /* EventUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F0A106D2798A9CC0060AB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0A10742798ADA60060AB6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F0A10782798B0220060AB6C /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		2F0A107B2798B2D00060AB6C /*  Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,12 @@
 		2F0A10412798A34D0060AB6C /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				2F0A107A2798B2C20060AB6C /* Utils */,
+				2F0A10762798AFB40060AB6C /* UI */,
+				2F0A10732798AD9C0060AB6C /* System */,
+				2F0A106C2798A9AD0060AB6C /* Resources */,
 				2F0A10422798A34D0060AB6C /* EventApp.swift */,
 				2F0A10442798A34D0060AB6C /* ContentView.swift */,
-				2F0A10462798A34E0060AB6C /* Assets.xcassets */,
-				2F0A10482798A34E0060AB6C /* Preview Content */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -125,6 +134,48 @@
 				2F0A105F2798A34E0060AB6C /* EventUITestsLaunchTests.swift */,
 			);
 			path = EventUITests;
+			sourceTree = "<group>";
+		};
+		2F0A106C2798A9AD0060AB6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A10482798A34E0060AB6C /* Preview Content */,
+				2F0A106D2798A9CC0060AB6C /* Info.plist */,
+				2F0A10462798A34E0060AB6C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F0A10732798AD9C0060AB6C /* System */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A10742798ADA60060AB6C /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		2F0A10762798AFB40060AB6C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A10772798AFB80060AB6C /* InfoPager */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F0A10772798AFB80060AB6C /* InfoPager */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A10782798B0220060AB6C /* InfoPage.swift */,
+			);
+			path = InfoPager;
+			sourceTree = "<group>";
+		};
+		2F0A107A2798B2C20060AB6C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A107B2798B2D00060AB6C /*  Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +264,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 2F0A10362798A34D0060AB6C;
 			productRefGroup = 2F0A10402798A34D0060AB6C /* Products */;
@@ -259,6 +311,9 @@
 			files = (
 				2F0A10452798A34D0060AB6C /* ContentView.swift in Sources */,
 				2F0A10432798A34D0060AB6C /* EventApp.swift in Sources */,
+				2F0A10792798B0220060AB6C /* InfoPage.swift in Sources */,
+				2F0A107C2798B2D10060AB6C /*  Utils.swift in Sources */,
+				2F0A10752798ADA60060AB6C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -418,10 +473,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Event/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Event/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = RN93H5579J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Event/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,9 +488,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ss.Event;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.event;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,10 +503,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Event/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Event/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = RN93H5579J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Event/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,9 +518,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ss.Event;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ss.event;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+@available(iOS 14.0, *)
 struct EventApp: App {
     var body: some Scene {
         WindowGroup {
@@ -15,3 +15,17 @@ struct EventApp: App {
         }
     }
 }
+
+
+@main
+struct EventWrapper {
+    static func main() {
+        if #available(iOS 14.0, *) {
+            EventApp.main()
+        }
+        else {
+            UIApplicationMain(CommandLine.argc, CommandLine.unsafeArgv, nil, NSStringFromClass(SceneDelegate.self))
+        }
+    }
+}
+
